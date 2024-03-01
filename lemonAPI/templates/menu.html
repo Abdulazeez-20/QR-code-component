@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Title</td>
+        <td>Price</td>
+        <td>Stock</td>
+        <td>Tax</td>
+      </tr>
+      {% for item in data %}
+      <tr>
+        <td>{{item.title}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.stock}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.after_tax}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
